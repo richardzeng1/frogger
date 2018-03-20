@@ -155,7 +155,7 @@ module datapath(
 	    	y <= y_in;
 
 			// starts going down
-			
+
 			y_dir <= 1'b0;
     	end
     	else if (move) begin
@@ -247,8 +247,8 @@ module control(
 		case (current_state)
       		S_DRAW:  // load up the starting position
 	        begin
-				x = 0;
-				y = 7'b0111100;
+				x = 3'b111;
+				y = 0;
 				load = 1'b1;
 	        end
       		S_COUNT_DRAW:
